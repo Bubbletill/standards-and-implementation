@@ -27,6 +27,7 @@ To show Other User on the login screen:
 Inside `Local Policies -> Security Options`:
 - Don't display last signed-in: `Enabled`
 - Don't display username at sign-in: `Enabled`
+<br>
 These are under `Interactive logon`
 
 ### Group Policy edits
@@ -37,10 +38,12 @@ Inside `User Configuration -> System -> Custom User Interface`:
 *Please note the security and group policy entries are not yet complete.*
 
 ## Breaking from the Shell
-To break out of the Bubbletill Shell, press the following keybinds: `CTRL + SHIFT + ALT + X`. You will be prompted to enter a password, the default password being `bubbletill`. To change this, edit the `passwordHash` value within `Shell.cs`. To get the hash for your password, edit the `Shell_Keydown` function and add `Clipboard.SetText(hashedInputStr);` after it is assigned. Ensure that `passwordOK` is set to `true` to ensure you can break from the shell. It is also recommened to change `passSalt` to your own custom string.
+To break out of the Bubbletill Shell, press the following keybinds: `CTRL + SHIFT + ALT + X`. You will be prompted to enter a password, the default password being `bubbletill`.
+<br>
+Changing the password will require Visual Studio and knowledge of C#. From BT-SHELL's source code, edit the `passwordHash` value within `Shell.cs`. To get the hash for your password, edit the `Shell_Keydown` function and add `Clipboard.SetText(hashedInputStr);` after it is assigned. Ensure that `passwordOK` is set to `true` to ensure you can break from the shell. It is also recommended to change `passSalt` to your own custom string.
 
 ## Inside the root folder **FOR THE CONTROLLER**
-- BO jar caleld `bo.jar`
+- BO jar called `bo.jar`
 - Folder for all of Local Server's files: `C:\bubbletill\localserver`.
 - Folder for all of Backend's files: `C:\bubbletill\backend`.
 
