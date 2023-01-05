@@ -26,8 +26,7 @@ Inside `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 To show Other User on the login screen:
 Inside `Local Policies -> Security Options`:
 - Don't display last signed-in: `Enabled`
-- Don't display username at sign-in: `Enabled`
-<br>
+- Don't display username at sign-in: `Enabled` <br>
 These are under `Interactive logon`
 
 ### Group Policy edits
