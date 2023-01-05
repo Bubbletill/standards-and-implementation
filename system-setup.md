@@ -43,6 +43,8 @@ To break out of the Bubbletill Shell, press the following keybinds: `CTRL + SHIF
 <br>
 Changing the password will require Visual Studio and knowledge of C#. From BT-SHELL's source code, edit the `passwordHash` value within `Shell.cs`. To get the hash for your password, edit the `Shell_Keydown` function and add `Clipboard.SetText(hashedInputStr);` after it is assigned. Ensure that `passwordOK` is set to `true` to ensure you can break from the shell. It is also recommended to change `passSalt` to your own custom string.
 
+If the right password is entered, the shell will close and Windows Explorer will appear. Once any maintenance has been done, logging out and logging back in will restore the Shell.
+
 # Controller Server
 ## Inside the root folder
 - BO jar called `bo.jar`
