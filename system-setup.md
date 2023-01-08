@@ -62,5 +62,6 @@ If the right password is entered, the shell will close and Windows Explorer will
 - BO jar called `bo.jar`
 - Folder for all of Local Server's files: `C:\bubbletill\localserver`.
 - Folder for all of Backend's files: `C:\bubbletill\backend`.
+- Data file called `data.json`. The data file structure is the same as above, however the register number should be set to -1.
 
 Further instructions coming soon.
