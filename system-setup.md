@@ -6,7 +6,6 @@ Bubbletill POS devices are designed to run on Windows 10, with this guide being 
 ## Inside the root folder
 - POS jar called `pos.jar`
 - BO jar called `bo.jar`
-- Folder for all of Local Server's files: `C:\bubbletill\localserver`.
 - Folder for all of Shell's files: `C:\bubbletill\shell`.
 - Data file called `data.json`.
 
@@ -60,7 +59,6 @@ If the right password is entered, the shell will close and Windows Explorer will
 # Controller Server
 ## Inside the root folder
 - BO jar called `bo.jar`
-- Folder for all of Local Server's files: `C:\bubbletill\localserver`.
 - Folder for all of Backend's files: `C:\bubbletill\backend`.
 - Data file called `data.json`. The data file structure is the same as above, however the register number should be set to -1.
 
