@@ -8,6 +8,18 @@ Bubbletill POS devices are designed to run on Windows 10, with this guide being 
 - BO jar called `bo.jar`
 - Folder for all of Local Server's files: `C:\bubbletill\localserver`.
 - Folder for all of Shell's files: `C:\bubbletill\shell`.
+- Data file called `data.json`.
+
+### Data File
+The data file contains all the information about the current device, including register and store number, controller URI, etc. Here is an example file:
+```json
+{
+  "storeno": 1,
+  "regno": 1,
+  "token": "bubbletilld3m0one",
+  "backend": "http://yourcontroller.com:5000",
+}
+```
 
 ## Accounts
 There should be two user accounts:
