@@ -6,3 +6,6 @@ Backend requires Python3 with the following dependencies which can be installed 
 - flask
 - mysql-connector-python
 - redis
+
+# System Dependencies
+Both the controller and local POS devices require an instance of MySQL 8. For more details on setting up the database, see `dbsetup.md`.
