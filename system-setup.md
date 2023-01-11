@@ -17,6 +17,9 @@ The data file contains all the information about the current device, including r
   "regno": 1,
   "token": "bubbletilld3m0one",
   "backend": "http://yourcontroller.com:5000",
+  
+  "dbUsername": "bubbletill",
+  "dbPassword": "verysecure"
 }
 ```
 
