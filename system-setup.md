@@ -54,12 +54,13 @@ Inside `User Configuration -> System -> Custom User Interface`:
 
 ## Breaking from the Shell
 To break out of the Bubbletill Shell, press the following keybinds: `CTRL + SHIFT + ALT + X`. You will be prompted to enter a password, the default password being `bubbletill`.
-<br>
-Changing the password will require Visual Studio and knowledge of C#. From BT-SHELL's source code, edit the `passwordHash` value within `Shell.cs`. To get the hash for your password, edit the `Shell_Keydown` function and add `Clipboard.SetText(hashedInputStr);` after it is assigned. Ensure that `passwordOK` is set to `true` to ensure you can break from the shell. It is also recommended to change `passSalt` to your own custom string.
 
 If the right password is entered, the shell will close and Windows Explorer will appear. Once any maintenance has been done, logging out and logging back in will restore the Shell.
 
-# Controller Server
+
+Changing the password will require Visual Studio and knowledge of C#. From BT-SHELL's source code, edit the `passwordHash` value within `Shell.cs`. To get the hash for your password, edit the `Shell_Keydown` function and add `Clipboard.SetText(hashedInputStr);` after `hashedInputStr` is assigned. Ensure that `passwordOK` is set to `true` to ensure you can break from the shell. It is also recommended to change `passSalt` to your own custom string. Once you enter the password within the shell, the hash will be copied to your clipboard. You can then update `passwordHash` to that hash and undo any other changes.
+
+# The Controller
 ## Inside the root folder
 - BO jar called `bo.jar`
 - Folder for all of Backend's files: `C:\bubbletill\backend`.
